@@ -1,0 +1,27 @@
+# Python virtual environment
+.venv/
+venv/
+
+# Python bytecode cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller build artifacts (the standalone exe ships as a separate release asset)
+build/
+dist/
+
+# Generated tessellation images (the README example images stay tracked)
+*.png
+!images/*.png
+
+# User-exported settings files
+/*.json
+
+# IDE / editor
+.idea/
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
