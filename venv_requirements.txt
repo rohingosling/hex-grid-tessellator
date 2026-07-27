@@ -1,0 +1,17 @@
+# Development / build dependencies for the HEX Grid Tessellator.
+#
+# This is a superset of the runtime requirements: it pulls in everything an end
+# user needs (via -r requirements.txt) plus the tooling required to build the
+# standalone Windows executable and run the test suite.
+#
+# Install with:
+#
+#   .venv/Scripts/python.exe -m pip install -r venv_requirements.txt
+
+-r requirements.txt
+
+# Packaging — builds dist/hextessellator.exe (scripts/build.py, hextessellator.spec).
+pyinstaller>=6.0.0
+
+# Test runner.
+pytest>=7.0.0
